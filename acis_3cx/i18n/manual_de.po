@@ -1,0 +1,5 @@
+#. module: web
+#. odoo-javascript
+#: code:addons/web/static/src/views/fields/phone/phone_field.xml:0
+msgid "Call"
+msgstr "Anrufen"

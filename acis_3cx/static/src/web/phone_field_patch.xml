@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+  <!-- Patch the readonly mode (PhoneField) -->
+  <t t-name="acis_3cx.PhoneField" t-inherit="web.PhoneField" t-inherit-mode="extension">
+    <xpath expr="//div[hasclass('o_phone_content')]//a" position="attributes">
+      <attribute name="t-on-click">onLinkClicked</attribute>
+    </xpath>
+  </t>
+
+  <!-- Patch the form mode (FormPhoneField) -->
+  <t t-inherit="web.FormPhoneField" t-inherit-mode="extension">
+    <!-- Phone link when readonly -->
+    <xpath expr="//a[hasclass('o_form_uri')]" position="attributes">
+      <attribute name="t-on-click">onLinkClicked</attribute>
+    </xpath>
+    <!-- 'Call' button next to input -->
+    <xpath expr="//a[hasclass('o_phone_form_link')]" position="attributes">
+      <attribute name="t-on-click">onLinkClicked</attribute>
+    </xpath>
+  </t>
+
+</templates>
