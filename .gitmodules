@@ -1,3 +1,7 @@
 [submodule "ACIS_banas_test_2"]
 	path = ACIS_banas_test_2
 	url = https://github.com/dixitsuthar-banas/ACIS_banas_test_2.git
+[submodule "Test_2_dixit"]
+	path = Test_2_dixit
+	url = https://github.com/dixitsuthar-banas/ACIS_banas_test_2.git
+	branch = dev-dixit
